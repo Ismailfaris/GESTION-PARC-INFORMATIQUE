@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE72B5FC-7C95-4C71-8638-B983B8E3E216}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GESTION_MATERIEL_INFORMATIQUE</RootNamespace>
+    <AssemblyName>GESTION_MATERIEL_INFORMATIQUE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulation_Type_Materiel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulation_Type_Materiel.Designer.cs">
+      <DependentUpon>Consulation_Type_Materiel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultation_Modele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultation_Modele.Designer.cs">
+      <DependentUpon>Consultation_Modele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="globals.cs" />
+    <Compile Include="Marque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marque.Designer.cs">
+      <DependentUpon>Marque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu1.Designer.cs">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modele.Designer.cs">
+      <DependentUpon>Modele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type_Materiel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Type_Materiel.Designer.cs">
+      <DependentUpon>Type_Materiel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulation_Type_Materiel.resx">
+      <DependentUpon>Consulation_Type_Materiel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultation_Modele.resx">
+      <DependentUpon>Consultation_Modele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marque.resx">
+      <DependentUpon>Marque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu1.resx">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modele.resx">
+      <DependentUpon>Modele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Type_Materiel.resx">
+      <DependentUpon>Type_Materiel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\authentication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4544844-business-comerce-consultation-delivery-shop_121444.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_task_tasklist_checklist_check_icon_145964.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\authentication1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4544825-business-comerce-delivery-new-letter-shop_121425.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4544845-business-comerce-delivery-list-shop_121445.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmag_search_find_export_locate_5984.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GAPJXIU6FAI6PMVHXRYLN6MARE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H0Oezk8f_400x400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detail1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codeigniter_plain_logo_icon_1465913.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pinterest-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-a-322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-r-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-r-322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chercher-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-copyright-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-engrenage-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chercher-322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logo-windows-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-3ds-max-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chercher-323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-connexion-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tinder-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parc2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
